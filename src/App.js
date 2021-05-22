@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import AppStyles from "./styles"
+import LabTester from './LabTester'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { fabGithub } from '@fortawesome/free-brands-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+const App = () => (
+  <AppStyles>
+    <pre><code>{`
+dP         .d888888   888888ba   888888ba  d888888P  88888888b .d88888b  d888888P  88888888b  888888ba  
+88        d8'    88   88    \`8b  88    \`8b    88     88        88.    "'    88     88         88    \`8b
+88        88aaaaa88a a88aaaa8P' a88aaaa8P'    88    a88aaaa    \`Y88888b.    88    a88aaaa    a88aaaa8P'
+88        88     88   88   \`8b.  88   \`8b.    88     88              \`8b    88     88         88   \`8b.
+88        88     88   88    .88  88    .88    88     88        d8'   .8P    88     88         88     88
+88888888P 88     88   88888888P  88888888P    dP     88888888P  Y88888P     dP     88888888P  dP     dP`}</code></pre>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <LabTester />
+    <a href='https://github.com/juiceghost/labbtester'>Github</a>
+  </AppStyles>);
 
-export default App;
+export default App
